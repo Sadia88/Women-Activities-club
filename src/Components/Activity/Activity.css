@@ -1,0 +1,18 @@
+.activity-container img{
+width: 200px;
+height: 200px;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
+.activity-container{
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.btn-addTocart{
+    padding: 5px;
+    width: 100%;
+    background-color:rgb(39, 140, 198);;
+}

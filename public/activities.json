@@ -1,7 +1,8 @@
+
 [
     {
       "id": "6334a0a9845da4fb29636522",
-      "picture": "https://www.freepik.com/free-photo/young-woman-training-with-battle-rope-cross-fit-gym_9849918.htm",
+      "picture": "./images/battlerope.jpg",
       "name": "Battle Rope",
       "age": "26-30",
       "time": 40,
@@ -9,7 +10,7 @@
     },
     {
       "id": "6334a0a96ad84c56cbcb50da",
-      "picture": "https://www.freepik.com/free-photo/attractive-young-fitness-model-runs-treadmill-is-engaged-fitness-sport-club_9849836.htm",
+      "picture": "./images/treadmill.jpg",
       "name": "Treadmill",
       "age": "36-32",
       "time": 50,
@@ -17,7 +18,7 @@
     },
     {
       "id": "6334a0a967f5270e4d00cd74",
-      "picture": "https://www.freepik.com/free-photo/fit-young-woman-lifting-barbells-looking-focused-working-out-gym_7764855.htm#query=woman%20workout&position=10&from_view=search",
+      "picture": "./images/barbells.jpg",
       "name": "Lifting Barbells",
       "age": "40-25",
       "time": 10,
@@ -25,7 +26,7 @@
     },
     {
       "id": "6334a0a914c5252a67803c34",
-      "picture": "https://www.freepik.com/free-photo/full-shot-woman-doing-burpees-indoors_27645159.htm#query=woman%20workout&position=26&from_view=search",
+      "picture": "./images/burpees.jpg",
       "name": "Burpees",
       "age": "40-31",
       "time": 42,
@@ -33,7 +34,7 @@
     },
     {
       "id": "6334a0a9d6e33b6a0aa4c88c",
-      "picture": "https://www.freepik.com/free-photo/young-concentrated-athlete-woman-doing-exercises-with-dumbbell_7791543.htm#query=woman%20workout&position=3&from_view=search",
+      "picture": "./images/dumbbell.jpg",
       "name": "Dumbbell",
       "age": "38-28",
       "time": 36,
@@ -41,7 +42,7 @@
     },
     {
         "id": "6334a0a9k7f5270d4d00cd00c",
-        "picture": "https://www.freepik.com/free-photo/beautiful-young-sporty-woman-training-workout-gym_16349253.htm#query=woman%20workout&position=12&from_view=search",
+        "picture": "./images/workout.jpg",
         "name": "Workout ",
         "age": "40-25",
         "time": 20,
