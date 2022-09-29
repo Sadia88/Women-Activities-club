@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './AddABreak.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,7 +12,14 @@ const AddABreak = ({exerciseTime,setExcerciseTime}) => {
     //        console.log(activity.time)    
        
     // ))
-const [breakTime,setBreakTime]=useState(0)
+const [breakTime,setBreakTime]=useState()
+
+useEffect(()=>{
+    const storedTime=JSON.parse(localStorage.getItem('time'));
+    
+console.log(storedTime)
+    setBreakTime(storedTime)
+  },[])
 
     const handleBreakTime=(e)=>{
 
@@ -23,7 +30,16 @@ const [breakTime,setBreakTime]=useState(0)
             updatedBreakTime=breakTime+updatedBreakTime
             setBreakTime(updatedBreakTime)
         
-       
+            
+            
+            localStorage.setItem('time', JSON.stringify(updatedBreakTime));
+                // localStorage.setItem("time",updatedBreakTime)
+                
+               
+                
+
+
+
        
     }
     const notify = () => {
@@ -44,13 +60,13 @@ const [breakTime,setBreakTime]=useState(0)
         <div className='Exercise-container'>
             <div className='Exercise-time '>
                <p><strong>Exercise time     </strong></p> 
-               <p>{exerciseTime}</p>
+               <p>{exerciseTime} Seconds</p>
             </div>
             
             <div className='break-time-container'>
             <div className='break-time'>
                <p><strong>Break time     </strong></p> 
-               <p>{breakTime}</p>
+               <p>{breakTime} Seconds</p>
             </div>
             </div>
             </div>
