@@ -41,3 +41,7 @@
     border: none;
     border-radius: 10px;
 }
+.btn-breakTime:hover{
+    background-color: rgb(39, 140, 198);
+    color: white;
+}

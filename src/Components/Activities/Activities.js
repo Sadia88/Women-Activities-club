@@ -6,7 +6,7 @@ const Activities = ({activities,exerciseTime,setExcerciseTime}) => {
  
     return (
         <div>
-            <h5>Select today’s exercise</h5>
+            <h1>Select today’s exercise</h1>
            <div className='activities-container'>
            {
             activities.map((activity)=>(

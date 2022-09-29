@@ -11,7 +11,7 @@ const RightSection = ({exerciseTime,setExcerciseTime}) => {
             <div className='profile'>
                 <img src="https://media.istockphoto.com/photos/shot-of-a-beautiful-young-woman-posing-against-a-grey-background-picture-id1352839823" alt="" />
                <div>
-               <h3>Sadia Sharmin</h3>
+               <h3>Madaam Curry</h3>
                <div>
             
                <FaFontAwesome icon={FaSearchLocation}></FaFontAwesome>

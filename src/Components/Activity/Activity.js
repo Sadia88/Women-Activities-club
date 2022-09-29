@@ -5,7 +5,10 @@ const {picture,name,description,age,time}=activity
 
 
 const handleExerciseTime=(e)=>{
-
+e.target.innerText="Added"
+e.target.disabled = true;
+e.target.style.backgroundColor = "green"
+e.target.style.color = "white"
     let  updatedExerciseTime=parseInt(time)
          console.log(updatedExerciseTime)
        

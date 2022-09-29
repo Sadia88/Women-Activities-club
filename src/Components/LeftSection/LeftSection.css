@@ -9,8 +9,9 @@
 
     
 }
-.header h1{
+.headings{
     color: rgb(39, 140, 198);
+    font-size: 40px;
 }
 .header img{
     width: 40px;
