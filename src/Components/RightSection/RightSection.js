@@ -5,7 +5,7 @@ import './RightSection.css'
 import {FaFontAwesome, FaSearchLocation } from "react-icons/fa";
 import AddABreak from '../AddABreak/AddABreak';
 
-const RightSection = ({activities}) => {
+const RightSection = ({exerciseTime,setExcerciseTime}) => {
     return (
         <div className='right-section'>
             <div className='profile'>
@@ -33,7 +33,7 @@ const RightSection = ({activities}) => {
                <p>Age</p>
                </div>
             </div>
-            <AddABreak activities={activities}></AddABreak>
+            <AddABreak exerciseTime={exerciseTime} setExcerciseTime={setExcerciseTime} ></AddABreak>
         </div>
     );
 };

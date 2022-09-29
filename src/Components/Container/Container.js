@@ -5,8 +5,9 @@ import './Container.css'
 
 const Container = () => {
     const [activities,setActivities]=useState([])
+    const [exerciseTime,setExcerciseTime]=useState(0)
 
-    console.log(activities)
+    // console.log(activities)
   
   
     useEffect(()=>{
@@ -20,10 +21,10 @@ const Container = () => {
         <div className='container'>
             <div className='left-section'>
 
-                <LeftSection activities={activities}></LeftSection>
+                <LeftSection activities={activities} exerciseTime={exerciseTime} setExcerciseTime={setExcerciseTime}></LeftSection>
             </div>
             <div className='right-section'>
-                <RightSection activities={activities}></RightSection>
+                <RightSection exerciseTime={exerciseTime} setExcerciseTime={setExcerciseTime} ></RightSection>
             </div>
         </div>
     );

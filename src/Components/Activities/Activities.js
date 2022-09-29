@@ -2,7 +2,7 @@ import React from 'react';
 import './Activities.css'
 import { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
-const Activities = ({activities}) => {
+const Activities = ({activities,exerciseTime,setExcerciseTime}) => {
  
     return (
         <div>
@@ -11,7 +11,7 @@ const Activities = ({activities}) => {
            {
             activities.map((activity)=>(
                
-                <Activity activity={activity} key={activity?.id} ></Activity>
+                <Activity activity={activity} key={activity?.id} exerciseTime={exerciseTime} setExcerciseTime={setExcerciseTime} ></Activity>
             ))
           }
            </div>

@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 import './AddABreak.css'
 
-const AddABreak = ({activities}) => {
-    console.log(activities)
+const AddABreak = ({exerciseTime,setExcerciseTime}) => {
+    // // console.log(activities)
+    // const {time}=activities;
+
+    // // console.log(activities.time)
+    // activities.map((activity)=>(
+    //        console.log(activity.time)    
+       
+    // ))
 const [breakTime,setBreakTime]=useState(0)
 
     const handleBreakTime=(e)=>{
 
 
         let  updatedBreakTime=parseInt(e.target.innerText)
-        console.log(typeof(updatedBreakTime))
+        // console.log(typeof(updatedBreakTime))
        
             updatedBreakTime=breakTime+updatedBreakTime
             setBreakTime(updatedBreakTime)
@@ -32,7 +39,7 @@ const [breakTime,setBreakTime]=useState(0)
         <div className='Exercise-container'>
             <div className='Exercise-time '>
                <p><strong>Exercise time     </strong></p> 
-               <p>200 seconds</p>
+               <p>{exerciseTime}</p>
             </div>
             
             <div className='break-time-container'>

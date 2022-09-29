@@ -3,7 +3,7 @@ import './LeftSection.css'
 
 import Activities from '../Activities/Activities';
 
-const LeftSection = ({activities}) => {
+const LeftSection = ({activities,exerciseTime,setExcerciseTime}) => {
     return (
         <div className='left-section-container'>
             <div className='header'>
@@ -12,7 +12,7 @@ const LeftSection = ({activities}) => {
                 
                
             </div>
-            <Activities activities={activities}></Activities>
+            <Activities activities={activities} exerciseTime={exerciseTime} setExcerciseTime={setExcerciseTime}></Activities>
         </div>
     );
 };
