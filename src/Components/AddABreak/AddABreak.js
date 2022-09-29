@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import './AddABreak.css'
 
-const AddABreak = () => {
-const [breakTime,setBreakTime]=useState(breakTime)
+const AddABreak = ({activities}) => {
+    console.log(activities)
+const [breakTime,setBreakTime]=useState(0)
 
     const handleBreakTime=(e)=>{
-        setBreakTime(e.target.innerText)
-        console.log(breakTime)
+
+
+        let  updatedBreakTime=parseInt(e.target.innerText)
+        console.log(typeof(updatedBreakTime))
+       
+            updatedBreakTime=breakTime+updatedBreakTime
+            setBreakTime(updatedBreakTime)
+        
+       
+       
     }
     return (
         <div>
@@ -14,10 +23,10 @@ const [breakTime,setBreakTime]=useState(breakTime)
             <div className='break-container'>
             
             <button className="btn-breakTime"><span  onClick={handleBreakTime}>10</span>s</button>
-            <button className="btn-breakTime">20</button>
-            <button className="btn-breakTime">30</button>
-                <button className="btn-breakTime">40</button>
-                <button className="btn-breakTime">50</button>
+            <button className="btn-breakTime"><span  onClick={handleBreakTime}>20</span>s</button>
+            <button className="btn-breakTime"><span  onClick={handleBreakTime}>30</span>s</button>
+                <button className="btn-breakTime"><span  onClick={handleBreakTime}>40</span>s</button>
+                <button className="btn-breakTime"><span  onClick={handleBreakTime}>50</span>s</button>
         </div>
         <h3>Exercise Details</h3>
         <div className='Exercise-container'>
@@ -29,7 +38,7 @@ const [breakTime,setBreakTime]=useState(breakTime)
             <div className='break-time-container'>
             <div className='break-time'>
                <p><strong>Break time     </strong></p> 
-               <p>15 seconds</p>
+               <p>{breakTime}</p>
             </div>
             </div>
             </div>

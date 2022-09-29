@@ -3,7 +3,7 @@ import './LeftSection.css'
 
 import Activities from '../Activities/Activities';
 
-const LeftSection = () => {
+const LeftSection = ({activities}) => {
     return (
         <div className='left-section-container'>
             <div className='header'>
@@ -12,7 +12,7 @@ const LeftSection = () => {
                 
                
             </div>
-            <Activities></Activities>
+            <Activities activities={activities}></Activities>
         </div>
     );
 };
