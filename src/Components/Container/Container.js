@@ -1,5 +1,6 @@
 import React from 'react';
 import LeftSection from '../LeftSection/LeftSection';
+import RightSection from '../RightSection/RightSection';
 import './Container.css'
 
 const Container = () => {
@@ -10,7 +11,7 @@ const Container = () => {
                 <LeftSection></LeftSection>
             </div>
             <div className='right-section'>
-                <h1>right side</h1>
+                <RightSection></RightSection>
             </div>
         </div>
     );

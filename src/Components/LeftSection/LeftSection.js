@@ -1,13 +1,13 @@
 import React from 'react';
 import './LeftSection.css'
-import logo from '../../images/logo2.jpg'
+
 import Activities from '../Activities/Activities';
 
 const LeftSection = () => {
     return (
         <div className='left-section-container'>
             <div className='header'>
-            <img src={logo}alt="" />
+            <img src="https://media.istockphoto.com/photos/healthy-eating-meal-with-exercise-picture-id174912173" alt="" />
                 <h1>Women Activities Club</h1>
                 
                

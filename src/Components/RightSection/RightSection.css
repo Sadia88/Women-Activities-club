@@ -1,0 +1,23 @@
+.right-section{
+    padding: 10px;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.info{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+.individual-info{
+    display: block;
+}
