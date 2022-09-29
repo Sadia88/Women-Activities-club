@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './AddABreak.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddABreak = ({exerciseTime,setExcerciseTime}) => {
     // // console.log(activities)
@@ -24,6 +26,9 @@ const [breakTime,setBreakTime]=useState(0)
        
        
     }
+    const notify = () => {
+        
+        toast("Wow  Todays Activity is completed!");}
     return (
         <div>
             <h3>Add A Break</h3>
@@ -51,7 +56,8 @@ const [breakTime,setBreakTime]=useState(0)
             </div>
 
              <div>
-                <button className="btn-completed">Activity Completed</button>
+                <button className="btn-completed" onClick={notify}>Activity Completed</button>
+                <ToastContainer />
              </div>
         
         </div>
