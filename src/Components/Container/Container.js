@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import LeftSection from '../LeftSection/LeftSection';
+import Questions from '../Questions/Questions';
 import RightSection from '../RightSection/RightSection';
 import './Container.css'
 
@@ -18,7 +19,8 @@ const Container = () => {
     
     ,[])
     return (
-        <div className='container'>
+        <div className='whole-container'>
+            <div className='container'>
             <div className='left-section'>
 
                 <LeftSection activities={activities} exerciseTime={exerciseTime} setExcerciseTime={setExcerciseTime}></LeftSection>
@@ -26,6 +28,10 @@ const Container = () => {
             <div className='right-section'>
                 <RightSection exerciseTime={exerciseTime} setExcerciseTime={setExcerciseTime} ></RightSection>
             </div>
+        </div>
+        <div>
+            <Questions></Questions>
+        </div>
         </div>
     );
 };

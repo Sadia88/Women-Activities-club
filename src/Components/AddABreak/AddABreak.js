@@ -24,15 +24,15 @@ console.log(storedTime)
     const handleBreakTime=(e)=>{
 
 
-        let  updatedBreakTime=parseInt(e.target.innerText)
+        let  breakTime=parseInt(e.target.innerText)
         // console.log(typeof(updatedBreakTime))
        
-            updatedBreakTime=breakTime+updatedBreakTime
-            setBreakTime(updatedBreakTime)
+            // updatedBreakTime=breakTime+updatedBreakTime
+            setBreakTime(breakTime)
         
             
             
-            localStorage.setItem('time', JSON.stringify(updatedBreakTime));
+            localStorage.setItem('time', JSON.stringify(breakTime));
                 // localStorage.setItem("time",updatedBreakTime)
                 
                
