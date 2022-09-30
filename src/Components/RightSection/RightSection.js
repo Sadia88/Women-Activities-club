@@ -1,9 +1,11 @@
 import React from 'react';
 import './RightSection.css'
 
-
-import {FaFontAwesome, FaSearchLocation } from "react-icons/fa";
 import AddABreak from '../AddABreak/AddABreak';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
+
 
 const RightSection = ({exerciseTime,setExcerciseTime}) => {
     return (
@@ -13,9 +15,11 @@ const RightSection = ({exerciseTime,setExcerciseTime}) => {
                <div>
                <h3>Madaam Curry</h3>
                <div>
-            
-               <FaFontAwesome icon={FaSearchLocation}></FaFontAwesome>
-               <small>Chittagong , Bangladesh</small>
+        
+           
+               <FontAwesomeIcon icon={faLocationPin} />
+               <small>  Chittagong , Bangladesh</small>
+               
                </div>
                </div>
             </div>
